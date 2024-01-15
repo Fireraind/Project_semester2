@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi</title>
+    <link rel="stylesheet" href="assets/style1.css">
+    <script type="text/javascript">
+        // function message()
+        // {
+        //     alert("Harap Mengisi Data Booking Dengan Benar")
+        // }
+    </script>
+</head>
+<body  onload="message()">
+    <div class="container"></div>
+    <!-- Navigasi Bar -->
+        <nav>
+
+            <div class="navbar_form ">
+                <a href="index.html"><img class="logo" src="img/logo.png" alt="logo" ></a>
+                <ul class="ul_form">
+                    <h2 class="h1_form">Registrasi</h2>
+                </ul>
+            </nav>
+    </div>
+    
+    <!-- END -->
+    
+    <!-- CONTENT  -->
+    <div class="form">
+        
+        <form class="isi_form" action="hasil.php" method="post" >
+    <table class="tabel_form">
+        <tr>
+            <td><label for="nama">Nama</label></td> <td>:</td>
+            <td><input class="input" type="text" id="nama" name="nama" size="25" maxlength="50"  placeholder="Nama" required>
+            </label></td>
+        </tr>
+        <tr>
+            <td><label for="nohp">No HP </label></td> <td>:</td>
+            <td><input class="input" id="nohp" type="number" name="nohp" size="25" maxlength="50" placeholder="No HP " required></td>
+        </tr>
+        <tr>
+            <td><label for="tanggal">Tanggal</label> </td> <td>:</td>
+            <td><input id="tanggal" class="input" type="date" name="tanggal" size="25" maxlength="50" required ></td>
+        </tr>
+        <tr>
+            <td><label for="start">Jam Mulai</label></td> <td>:</td>
+            <td><input id="start" class="input" name="start_time" type="time" size="25" required></td>
+        </tr>
+        <tr>
+            <td><label for="end"> Jam Selesai</label></td> <td>:</td>
+            <td><input id="end" class="input" name="end_time" type="time" size="25" required></td>
+        </tr>
+        <tr>
+            <td><label for="lapangan">Lapangan</label></td> <td>:</td>
+            <td>
+               <select class="select" id="lapangan" name="lapangan"  size="3" required>
+               <optgroup label="Lapangan">
+               <option value="Lapangan 1">Lapangan 1
+               <option value="Lapangan 2">Lapangan 2
+            </td>
+        </tr>
+        <tr>
+            <td><label for="kegiatan">Kegiatan</label> </td> <td>:</td> 
+            <td>
+                <select id="kegiatan" class="select" name="kegiatan"  size="6" required>
+                <optgroup label="kegiatan">
+                <option value="Futsal">Futsal
+                <option value="Badminton">Badminton
+                <option value="Basket">Basket
+                <option value="Volly">Volly
+                <option value="Lain-lain">Lain-lain
+            </td>
+        </tr>
+        <tr>
+            <td><label for="keterangan">Keterangan</label> </td> <td>:</td>
+            <td><textarea id="keterangan" class="textarea" name="keterangan" placeholder="Keterangan"></textarea><td>
+        </tr>    
+        <tr>
+            <td><label for="harga">Harga </label></td> <td>:</td>
+             <td><input style="font-size: 20px; border: none;" id="harga" readonly value="Rp. 75.000">
+            </td>
+               
+        </tr>
+    </table>
+    <div class="btn">
+        <input class="submit" type="submit"  value="kirim">
+        <input class="batal" type="reset" value="batal">
+    </div>
+    </div>
+    <!-- END -->
+
+    <!-- FOOTER -->
+    <div class="container_footer">
+    <h1 class="h1_footer">GOR © 2024 ERIF</h1>
+    </div>
+    <!-- END -->
+</div>
+</body>
+</html>
