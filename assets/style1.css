@@ -67,18 +67,19 @@ nav li {
 }
 /* end navbar */
 /* content */
+
 main {
   background-image: url(../img/webbackground.png);
-  max-width: 100vw;
+  width: 100%;
   background-size: 100% 700px;
   background-position: 0px 40px;
   background-repeat: no-repeat;
-  position: relative;
 }
+
 .container_conten {
   /* box-sizing: border-box; */
   margin-bottom: 50px;
-  height: 600px;
+  height: 97vh;
   margin-bottom: -68px;
   display: flex;
 }
@@ -177,6 +178,9 @@ main {
     /* top: 37%;
     left: 38%; */
   }
+  .container_conten {
+    height: 99.6vh;
+  }
 }
 @media screen and (max-width: 576px) {
   nav {
@@ -219,16 +223,18 @@ main {
   margin-left: 20px;
   margin-top: 10px;
 } */
-.ul_form {
+/* .ul_form {
   display: flex;
   height: 50px;
-}
+} */
 .h1_form {
   margin-top: 1.3%;
 }
 .form {
+  margin-left: 20px;
   margin-top: 80px;
-  width: 100%;
+  width: 90%;
+  height: 560px;
 }
 label {
   cursor: pointer;
@@ -290,11 +296,22 @@ label {
   box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.3);
 }
 @media screen and (max-width: 488px) {
+  .form {
+    height: 520px;
+  }
   .btn {
-    bottom: 0.6%;
+    transform: translateY(-40%);
   }
   .isi_form {
     font-size: 16px;
+  }
+  .submit {
+    width: 50px;
+    height: 25px;
+  }
+  .batal {
+    width: 50px;
+    height: 25px;
   }
 }
 /* END Form */
@@ -426,8 +443,8 @@ label {
   align-items: center;
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
   margin-top: 38px;
-  position: relative;
-  z-index: 1;
+  /* position: relative;
+  z-index: 1; */
 }
 .h1_footer {
   font-size: 2rem;
