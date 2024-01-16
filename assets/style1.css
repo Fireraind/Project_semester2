@@ -66,20 +66,23 @@ nav li {
   /* border: radius 8px; */
 }
 /* end navbar */
+.container1 {
+  background-image: url(../img/webbackground.png);
+  background-size: 100% 100%;
+  background-position: 0px 40px;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 /* content */
 
 main {
-  background-image: url(../img/webbackground.png);
   width: 100%;
-  background-size: 100% 700px;
-  background-position: 0px 40px;
-  background-repeat: no-repeat;
+  height: 86.1vh;
 }
 
 .container_conten {
   /* box-sizing: border-box; */
   margin-bottom: 50px;
-  height: 550px;
   margin-bottom: -68px;
   display: flex;
 }
@@ -178,8 +181,11 @@ main {
     /* top: 37%;
     left: 38%; */
   }
-  .container_conten {
-    height: 99.6vh;
+  .container1 {
+    height: 100%;
+  }
+  main {
+    height: 92.5vh;
   }
 }
 @media screen and (max-width: 576px) {
