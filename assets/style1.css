@@ -79,7 +79,7 @@ main {
 .container_conten {
   /* box-sizing: border-box; */
   margin-bottom: 50px;
-  height: 97vh;
+  height: 520px;
   margin-bottom: -68px;
   display: flex;
 }
